@@ -1,3 +1,4 @@
+//https://practice.geeksforgeeks.org/problems/distinct-occurrences/1
 #include<iostream>
 using namespace std;
 int rechelper(string s,string t,int i,int j)
