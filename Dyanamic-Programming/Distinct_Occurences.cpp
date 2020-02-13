@@ -35,7 +35,7 @@ int DPhelper(string s,string t)
     {
         for(auto j=1;j<=n;j++)
         {
-            if(s[m-i]==t[n-j])
+            if(s[i-1]==t[j-1])
             {
                 v[i][j]=v[i-1][j-1]+v[i-1][j];
             }
