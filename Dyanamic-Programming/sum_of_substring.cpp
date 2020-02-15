@@ -52,6 +52,17 @@ ll sumSubstring()
     
 }
 
+ll sumOfSubstring()
+{
+    ll mf=1;ans=0;
+    for(auto i=n-1;i>=0;i--)
+    {
+        ans+=num[i]*(i+1)*mf;
+        mf=(mf*10)+1;
+    }
+    return ans;
+}
+
 
 int32_t main()
 {
@@ -69,7 +80,7 @@ int32_t main()
 	    /*ll a=recApproach(0,0,0);
 	    cout<<ans<<endl;
 	    ans=0;*/
-	    cout<<sumSubstring()<<endl;
+	    cout<<sumOfSubstring()<<endl;
 	    
 	}
 
