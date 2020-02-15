@@ -1,5 +1,5 @@
 //Find the number of integers between 1 and N (inclusive) that contains exactly K non-zero digits when written in base ten.
-
+//https://atcoder.jp/contests/abc154/tasks/abc154_e
 #include<bits/stdc++.h>
 using namespace std;
 #define endl "\n"
