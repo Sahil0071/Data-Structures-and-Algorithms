@@ -39,6 +39,19 @@ ll recApproach(ll i,ll j,ll sum)
     
 }
 
+ll sumSubstring()
+{
+    vector<ll>sos(n);
+    sos[0]=num[0];ll res=sos[0];
+    for(auto i=1;i<n;i++)
+    {
+        sos[i]=(i+1)*num[i]+(sos[i-1]*10);
+        res+=sos[i];
+    }
+    return res;
+    
+}
+
 
 int32_t main()
 {
@@ -53,9 +66,11 @@ int32_t main()
 	    {
 	        num[i]=(ll)(s[i]-48);
 	    }
-	    ll a=recApproach(0,0,0);
+	    /*ll a=recApproach(0,0,0);
 	    cout<<ans<<endl;
-	    ans=0;
+	    ans=0;*/
+	    cout<<sumSubstring()<<endl;
+	    
 	}
 
 
