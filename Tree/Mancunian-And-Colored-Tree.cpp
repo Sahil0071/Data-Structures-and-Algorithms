@@ -18,7 +18,7 @@ vector<int>ans(100005,-1);
 vector<int>col(100005);
 unordered_map<int,vector<int>>mp;
 
-
+// Find the predecessors of a node and store it in a map.
 void dfs(int u,vector<int>graph[]){
 	
 	for(auto v:graph[u]){
