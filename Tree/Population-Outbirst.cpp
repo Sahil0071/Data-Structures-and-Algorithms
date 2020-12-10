@@ -23,10 +23,10 @@ struct a{
 Level wise input and according to the no of child a node can have.
 
 Input is happen level wise so at first ->    0
-											/ \
-										   1   2
-										  / \  |
-										 5   4 10  
+		                            / \ 
+					   1   2
+					  / \  |
+					 5   4 10  
 */
 int32_t main()
 {
